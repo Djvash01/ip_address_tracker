@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -18,6 +19,8 @@ import { GoogleMapsModule,  } from '@angular/google-maps';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
+    HttpClientJsonpModule,
     GoogleMapsModule
   ],
   providers: [],
