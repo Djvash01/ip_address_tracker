@@ -4,15 +4,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { SearchToolbarComponent } from './search-toolbar/search-toolbar.component';
 import { MapComponent } from './map/map.component';
+import { InformationComponent } from './map/information/information.component';
+import { FormsModule } from '@angular/forms';
+import { GoogleMapsModule,  } from '@angular/google-maps';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchToolbarComponent,
-    MapComponent
+    MapComponent,
+    InformationComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    GoogleMapsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
