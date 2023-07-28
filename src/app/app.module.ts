@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { SearchToolbarComponent } from './search-toolbar/search-toolbar.component';
 import { MapComponent } from './map/map.component';
 import { InformationComponent } from './map/information/information.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GoogleMapsModule,  } from '@angular/google-maps';
 
 @NgModule({
@@ -19,6 +19,7 @@ import { GoogleMapsModule,  } from '@angular/google-maps';
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     HttpClientJsonpModule,
     GoogleMapsModule

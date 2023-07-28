@@ -1,8 +1,9 @@
 <div class="search-toolbar">
   <span class="search-toolbar__title">IP Address Tracker</span>
   <div class="search-toolbar__actions">
-    <input type="text"  class="input" id="search">
-    <button type="button" class="button">
+    <input type="text"  class="input" id="search" [formControl]="search"
+      placeholder="Search for any IP address or domain">
+    <button type="button" class="button" [class.button--disabled]="search.invalid" (click)="searchIp()">
       <img src="assets/icons/icon-arrow.svg" alt="arrow right">
     </button>
   </div>

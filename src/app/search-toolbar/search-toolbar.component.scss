@@ -24,9 +24,10 @@
 
 .button {
   background-color: $color-black;
-  height: 50px;
-  width: 50px;
+  height: 48px;
+  width: 48px;
   display: flex;
+  padding: 0;
   justify-content: center;
   align-items: center;
   border: 1px solid $color-primary;
@@ -60,4 +61,8 @@
   font-size: 1.1em;
   font-weight: $font-medium;
   color: $color-black;
+
+  &::placeholder {
+    color: $color-secondary;
+  }
 }

@@ -11,6 +11,6 @@ export class EndpointsService {
   } as const;
 
   public readonly ipify = {
-    api: ''
+    api: 'https://geo.ipify.org/api/v2/country,city'
   } as const;
 }
