@@ -1,6 +1,6 @@
 <div class="container">
   <header class="container__header">
-    <app-search-toolbar></app-search-toolbar>
+    <app-search-toolbar (ipData)="handlerData($event)"></app-search-toolbar>
   </header>
   <section class="container__map">
     <app-map></app-map>

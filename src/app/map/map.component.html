@@ -1,6 +1,6 @@
 <div class="map">
   <div class="map__position-info">
-    <app-information></app-information>
+    <app-information [ipData]="ipData"></app-information>
   </div>
   <ng-container *ngIf="googleMapApiLoaded | async">
     <google-map>

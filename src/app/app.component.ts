@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IPData } from '@models/ip-data.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ip_address_tracker';
+  public data?: IPData;
+  
+
+  public handlerData(data: IPData): void {
+    this.data = data;
+  }
 }
