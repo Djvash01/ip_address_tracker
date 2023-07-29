@@ -7,18 +7,29 @@
   align-items: center;
   padding: 10%;
 
+  @media (min-width: 376px) {
+    padding: 30px 10%;
+  }
 
   &__title{
     color: $color-white;
     font-weight: $font-medium;
     font-size: 1.3em;
     margin-bottom: 20px;
+    @media (min-width: 375px) {
+      font-size: 1.7em;
+      margin-bottom: 25px;
+    }
   }
 
   &__actions {
     display: flex;
     align-items: center;
     width: 100%;
+
+    @media (min-width: 376px) {
+      width: 50%;
+    }
   }
   &__error {
     color: $color-white;
@@ -39,15 +50,24 @@
   border-bottom-right-radius: 15px;
   cursor: pointer;
 
+  @media (min-width: 376px) {
+    height: 58px;
+  }
+
   &--disabled {
     cursor: default;
     background-color: $color-disabled;
     border: 1px solid $color-disabled;
+    pointer-events: none;
   }
 
   img {
     width: 12px;
     height: 12px;
+    @media (min-width: 376px) {
+      height: 18px;
+      width: 18px;
+    }
   }
 
 }
@@ -64,6 +84,9 @@
   font-size: 1.1em;
   font-weight: $font-medium;
   color: $color-black;
+  @media (min-width: 376px) {
+    height: 38px;
+  }
 
   &::placeholder {
     color: $color-secondary;
