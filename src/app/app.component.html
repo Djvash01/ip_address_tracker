@@ -3,6 +3,6 @@
     <app-search-toolbar (ipData)="handlerData($event)"></app-search-toolbar>
   </header>
   <section class="container__map">
-    <app-map></app-map>
+    <app-map [ipData]="data"></app-map>
   </section>
 </div>

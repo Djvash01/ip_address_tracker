@@ -7,8 +7,7 @@ import { IPData } from '@models/ip-data.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  public data?: IPData;
-  
+  public data!: IPData;
 
   public handlerData(data: IPData): void {
     this.data = data;

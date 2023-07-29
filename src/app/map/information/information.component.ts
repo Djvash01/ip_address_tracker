@@ -9,6 +9,6 @@ import { IPData } from '@models/ip-data.model';
 })
 export class InformationComponent {
 
-  @Input() public ipData!: IPData;
+  @Input() public ipData?: IPData;
 
 }

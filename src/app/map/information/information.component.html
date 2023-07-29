@@ -1,18 +1,21 @@
-<div class="card">
+<div class="card" *ngIf="ipData">
   <div class="card__info">
     <span class="text__label">IP ADDRESS</span>
-    <span class="text__value">192.168.174.189</span>
+    <span class="text__value">{{ ipData.ip }}</span>
   </div>
   <div class="card__info">
     <span class="text__label">LOCATION</span>
-    <span class="text__value">Brooklyn, NY 10001</span>
+    <span class="text__value"
+      >{{ ipData.location.city }}, {{ ipData.location.region }} 
+      {{ ipData.location.postalCode }}</span
+    >
   </div>
   <div class="card__info">
     <span class="text__label">TIMEZONE</span>
-    <span class="text__value">UTC -05:00</span>
+    <span class="text__value">UTC {{ ipData.location.timezone }}</span>
   </div>
   <div class="card__info">
     <span class="text__label">ISP</span>
-    <span class="text__value">SpaceX Starlink</span>
+    <span class="text__value">{{ ipData.isp }}</span>
   </div>
 </div>
