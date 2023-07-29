@@ -2,8 +2,16 @@
   <div class="map__position-info">
     <app-information [ipData]="ipData"></app-information>
   </div>
-  <ng-container *ngIf="googleMapApiLoaded | async">
-    <google-map>
+  <ng-container *ngIf="(googleMapApiLoaded | async) && !!ipData">
+    <google-map
+      class="map__content"
+      width="100vw"
+      height="60vh"
+      [center]="center"
+      [options]="options"
+    >
+      <map-marker [position]="center" icon="assets/icons/icon-location.svg">
+      </map-marker>
     </google-map>
   </ng-container>
 </div>
