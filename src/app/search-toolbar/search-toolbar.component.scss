@@ -7,7 +7,7 @@
   align-items: center;
   padding: 10%;
 
-  @media (min-width: 376px) {
+  @media (min-width: 400px) {
     padding: 30px 10%;
   }
 
@@ -27,7 +27,7 @@
     align-items: center;
     width: 100%;
 
-    @media (min-width: 376px) {
+    @media (min-width: 400px) {
       width: 50%;
     }
   }
@@ -50,7 +50,7 @@
   border-bottom-right-radius: 15px;
   cursor: pointer;
 
-  @media (min-width: 376px) {
+  @media (min-width: 400px) {
     height: 58px;
   }
 
@@ -64,7 +64,7 @@
   img {
     width: 12px;
     height: 12px;
-    @media (min-width: 376px) {
+    @media (min-width: 400px) {
       height: 18px;
       width: 18px;
     }
@@ -84,7 +84,7 @@
   font-size: 1.1em;
   font-weight: $font-medium;
   color: $color-black;
-  @media (min-width: 376px) {
+  @media (min-width: 400px) {
     height: 38px;
   }
 
