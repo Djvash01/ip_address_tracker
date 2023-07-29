@@ -30,6 +30,9 @@
       min-height: 60px;
       width: calc(25% - 16px);
       padding: 0 15px;
+      &:last-child{
+        border-right: none;
+      }
     }
   }
 }
